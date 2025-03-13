@@ -13,10 +13,9 @@ public class Main {
         String dzien = sc.next();
         if (w < 10) znizka = 0;
         if (w >= 10 && w <=18) znizka -= 0.5;
-        if (miasto.equals("warszawa")) znizka -= 0.1;
-        if (dzien.equals("czwartek")) znizka = 0;
+        if (miasto.equals("warszawa")||miasto.equals("Warszawa")) znizka -= 0.1;
+        if (dzien.equals("czwartek")||dzien.equals("Czwartek")) znizka = 0;
         if (znizka < 0) znizka = 0;
-
         System.out.println(cena*znizka);
     }
 }
